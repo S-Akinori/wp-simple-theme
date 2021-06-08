@@ -1,0 +1,20 @@
+#sideBar {
+    .profile {
+        background-color: #fff;
+        padding: $spacer;
+        .img-container {
+            width: 150px;
+            margin: auto;
+            text-align: center;
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .category {
+        a {
+            color: #333;
+        }
+    }
+}

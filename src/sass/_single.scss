@@ -1,0 +1,193 @@
+.thumbnail {
+    margin: $spacer 0 $spacer*2;
+}
+
+.post-title {
+    text-align: center;
+    font-size: $text-lg;
+    font-weight: bold;
+}
+
+.post-content {
+    padding: 40px 10px;
+    @media only screen and (min-width: 786px) {
+        padding: 40px;
+    }
+    p {
+        line-height: 2.0;
+    }
+    // div {
+    //     margin: 1rem 0;
+    // }
+    h2 {
+        font-weight: bold;
+        font-size: $text-md;
+        background: #98fb98;
+        padding: 0.5rem;
+        margin: 2rem 0 1rem;
+    }
+    h3 {
+        margin: 2rem 0 1rem;
+        font-size: $text-md;
+        font-weight: bold;
+        border-bottom: dashed 2px #FFC778;
+    }
+    ul, ol {
+        background: #fffcf4;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px silver;
+        padding: 1rem 0 1rem 3rem;
+        li {
+            padding: 0.5rem;
+        }
+    }
+    blockquote {
+        background: #efefef;
+        font-style: italic;
+        padding: 15px;
+        &:before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f10d";
+            color: #cfcfcf;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        p {
+            color: #6f6f6f;
+            margin-left: 40px;
+        }
+    }
+    code {
+        background-color: #efefef;
+        padding: 1px 3px;
+        border-radius: 5px;
+    }
+    pre code {
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    }
+    // 目次
+    .table-of-contents {
+        h2, h3 {
+            font-size: 1rem;
+        }
+        li {
+            padding: 0;
+        }
+        ul, ol {
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0 0 0 1rem;
+        }
+    }
+    // /目次
+    .point {
+        font-size: $text-md;
+        font-weight: bold;
+        // border-left: 10px solid #98fb98;
+        .far, .fas {
+            color: yellow;
+        }
+    }
+    .point-border {
+        position: relative;
+        background-color: #e3f5d8;
+        margin-top: 2rem;
+        padding: 1rem;
+        ul, ol {
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0 0 0 3rem;
+            li {
+                padding: 0.5rem;
+            }
+        }
+        &:before {
+            content: '\f0a4  Point';
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            font-weight: bold;
+            top: -18px;
+            background-color: #7fff00;
+            padding: 0 1rem;
+            border-radius: 5px;
+        }
+    }
+    .addition {
+        background: #efefef;
+        padding: 1rem;
+    }
+    .talk {
+        margin: 1rem 0;
+        .icon {
+            width: 100%;
+            margin: auto;
+            @media only screen and (min-width: 786px) {
+                width: 70%;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+        .name {
+            font-size: 0.6rem;
+            @media only screen and (min-width: 786px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .talk-left {
+        .content {
+            position: relative;
+            border: 3px solid $lawngreen;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 30%;
+                left: -25px;
+                border: 14px solid transparent;
+                border-right: 14px solid #fff;
+                z-index: 2;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 30%;
+                left: -28px;
+                border: 14px solid transparent;
+                border-right: 14px solid $lawngreen;
+                z-index: 1;
+            }
+        }
+    }
+    .talk-right {
+        .content {
+            position: relative;
+            border: 3px solid $lawngreen;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 30%;
+                right: -27px;
+                border: 14px solid transparent;
+                border-left: 14px solid #fff;
+                z-index: 2;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 30%;
+                right: -30px;
+                border: 14px solid transparent;
+                border-left: 14px solid $lawngreen;
+                z-index: 1;
+            }
+        }
+    }
+}

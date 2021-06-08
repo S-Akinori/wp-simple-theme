@@ -1,0 +1,66 @@
+/* Setting Variables
+Note: some variables might affect bootstrap
+*/
+
+$text-md: 1.5rem;
+$text-lg: 1.75rem;
+$text-xl: 2.0rem;
+$lawngreen: #7cfc00;
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+$fa-font-path: "../src/fontawesome/webfonts";
+@import './fontawesome/scss/fontawesome.scss';
+@import './fontawesome/scss/solid.scss';
+@import './fontawesome/scss/regular.scss';
+
+@import "./prism-js/prism.css";
+@import "./swiperjs/swiper-bundle.min.css";
+
+@import "sass/header";
+@import "sass/index";
+@import "sass/sidebar";
+@import "sass/footer";
+@import "sass/single";
+@import "sass/page";
+
+/* overall settings */
+
+body {
+    background-color: #eee;
+    letter-spacing: 0.15rem;
+    line-height: 2rem;
+    color: #333;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #333;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.post-content {
+    background-color: #fff;
+}
+
+.d-sp {
+    display: block;
+}
+.d-pc {
+    display: none;
+}
+
+@media only screen and (min-width: 786px) {
+    .d-pc {
+        display: block;
+    }
+    .d-sp {
+        display: none;
+    }
+}

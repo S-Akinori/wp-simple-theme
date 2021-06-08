@@ -1,0 +1,8 @@
+.page {
+    background-color: #fff;
+    padding: $spacer;
+    @media only screen and (min-width: 768px) {
+        padding: 10px 80px;
+        margin: auto;
+    }
+}
